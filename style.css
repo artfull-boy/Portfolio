@@ -1,0 +1,443 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+:root {
+  --mainColor: rgb(10, 10, 10);
+}
+body {
+  font-family: "Playpen Sans", cursive;
+}
+.navbar {
+  background-color: rgb(10, 10, 10) !important;
+  position: sticky !important;
+}
+.navbar-nav li a.active {
+  transition: 0.5s;
+  color: var(--mainColor) !important;
+  background-color: white !important;
+}
+.navbar-nav li:hover {
+  transition: 0.5s;
+  background-color: white;
+}
+
+.navbar-nav li:hover a {
+  transition: 0.5s;
+  color: rgb(10, 10, 10);
+}
+.navbar ul li {
+  margin: 0;
+}
+.nav-link {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar ul li a {
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  display: block;
+  margin: 0;
+  padding: 15px 30px !important;
+}
+.hamburger:focus {
+    border: 2px solid white !important;
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+.navbar-toggler[aria-expanded="true"] {
+
+    outline: 0;
+    border: 2px solid white !important;
+}
+/* @media (max-width:992px) {
+    .navbar ul li a {
+        color: white;
+        font-size: 12px;
+        font-weight: 600;
+        margin: 0;
+        padding-top: 15px;
+        padding-bottom: 15px;
+      }
+} */
+.hero {
+  background: linear-gradient(74deg, #000000, 
+  rgb(15, 15, 15), #333);
+  background-size: 400% 400%;
+  animation: GradientBackground 9s ease infinite;
+
+  height: calc(100vh);
+}
+.hero .hero-image img {
+  border-radius: 50%;
+}
+.hero .hero-text h1 {
+  font-size: 42px;
+  color: white;
+  margin-bottom: 15px;
+}
+.hero .hero-text p {
+  color: white;
+  font-size: 22px;
+}
+.hero a {
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 6px;
+  padding: 20px 40px;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+.hero a:hover {
+  transition: 0.5s;
+  color: rgb(10, 10, 10);
+  background-color: white;
+}
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+  position: relative;
+  width: fit-content;
+  text-align: center;
+}
+.title::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  top: 0px;
+  background-color: var(--mainColor);
+}
+.skills .content .quote p:first-child {
+  font-size: 24px;
+  font-weight: bold;
+}
+.skills .content .quote p:last-child {
+  color: #333;
+
+}
+.progress_skills .progress {
+  width: 47%;
+  height: 30px;
+}
+@media (max-width: 884px) {
+  .progress_skills .progress {
+    width: 90%;
+  }
+}
+.progress_skills .progress .progress-bar {
+  background-color: rgb(10, 10, 10) !important;
+}
+.experience {
+  background-color: var(--mainColor);
+  color: white;
+}
+.experience .title::before {
+  background-color: white;
+}
+.exp {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.timeline {
+  height: 100%;
+  width: 5px;
+  background-color: #eeeeee57;
+  border-radius: 8px;
+}
+
+.timeline-panel {
+  width: 50%;
+  position: relative;
+}
+.timeline-panel > .timeline-text {
+  width: 100%;
+
+  position: relative;
+}
+.timeline-panel > .timeline-text > div {
+  background-color: white;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  margin-right: 40px;
+  position: relative;
+}
+.timeline-panel.left > .timeline-text > div {
+  margin-left: 40px;
+  margin-right: 0;
+}
+.timeline-panel > .timeline-text > div::before {
+  content: "";
+  position: absolute;
+  border-color: transparent transparent transparent white;
+  border-width: 15px;
+  border-style: solid;
+  bottom: 50%;
+  left: 99%;
+  transform: translateY(50%);
+}
+.timeline-panel.left > .timeline-text > div::before {
+  left: -25px;
+  border-color: transparent white transparent transparent;
+}
+.timeline-panel .cirle {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  background-color: #ddd;
+  border-radius: 50%;
+  bottom: 50%;
+  right: 0%;
+  transform: translate(50%, 50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.timeline-panel.left .cirle {
+  left: 0%;
+  transform: translate(-50%, 50%);
+}
+
+.timeline-panel .cirle i {
+  font-size: 22px;
+  color: #333;
+}
+.timeline-panel .timeline-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+.timeline-panel .timeline-heading h3 {
+  color: var(--mainColor);
+  font-size: 21px;
+  font-weight: 600;
+}
+.timeline-panel .timeline-heading h4 {
+  color: var(--mainColor);
+  font-size: 15px;
+  font-weight: 600;
+}
+.timeline-panel .timeline-heading p {
+  color: var(--mainColor);
+  font-size: 12px;
+}
+.timeline-panel .timeline-body p {
+  color: var(--mainColor);
+  font-size: 12px;
+}
+.cal {
+    font-size: 16px !important;
+    color: #333 !important;
+    margin-right: 5px;
+}
+.education .educ {
+  width: 100%;
+  justify-content: space-around;
+}
+
+.education .educ > div {
+  background-color: #ddd;
+  padding: 25px 50px;
+  display: flex;
+  flex-direction: column;
+  color: var(--mainColor);
+  gap: 5px;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.education .educ > div h5 {
+  font-size: 12px;
+}
+.education .educ > div i {
+  font-size: 50px;
+}
+.education .educ > div h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+.education .educ > div h4 {
+  font-size: 16px;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 15px;
+}
+.education .educ > div h4::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #333;
+}
+.education .educ > div p {
+  font-size: 12px;
+  margin-bottom: 0px;
+}
+.portfolio {
+  background-color: var(--mainColor);
+}
+.portfolio .title {
+  color: white;
+  margin: auto;
+}
+.portfolio .title::before {
+  background-color: white;
+}
+.project {
+    background-color: white;
+    color: black;
+    padding: 20px 30px;
+    border-radius: 10px;
+}
+.project h1 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.project p {
+    padding-top: 15px;
+    font-size: 14px;
+}
+.project small {
+    font-weight: bold;
+    color: #333 !important;
+}
+.disabled {
+    background-color: var(--mainColor) !important;
+}
+.card a, .disabled {
+    background-color: var(--mainColor);
+    box-sizing: border-box !important;
+    border: 2px solid transparent;
+}
+.card a:hover {
+    transition: 0.5s;
+    background-color: white;
+    border: 2px solid var(--mainColor);
+    color: var(--mainColor);
+}
+/* .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+} */
+.portfolio .links > div {
+  border: 5px solid white;
+  height: 25vh;
+}
+.portfolio .links > div img {
+  width: 100%;
+  height: 100%;
+  filter: grayscale(100%);
+}
+.portfolio .links > div:hover img {
+  transition: 0.5s;
+  filter: grayscale(0%);
+}
+.carousel-indicators > button {
+  width: 50px;
+  height: 50%;
+  background-color: black !important;
+}
+
+.carousel-inner .carousel-item {
+  text-align: center;
+}
+.carousel-inner .carousel-item h3 {
+  font-size: 22px;
+}
+.carousel-inner .carousel-item h4 {
+  font-size: 20px;
+}
+
+.bi {
+  color: black;
+  font-size: 30px;
+}
+footer {
+  background-color: var(--mainColor);
+  color: white;
+  padding: 30px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+}
+footer h5 {
+  font-size: 16px;
+}
+footer i {
+    font-size: 20px !important;
+    color: white !important;
+}
+footer i.facebook:hover {
+    transition: 0.5s;
+    color: #1877f2 !important;
+}
+footer i.instagram:hover {
+    transition: 0.5s;
+    color: #833ab4 !important;
+}
+footer i.twitter:hover {
+    transition: 0.5s;
+    color: #1da1f2 !important;
+}
+footer i.linkedin:hover {
+    transition: 0.5s;
+    color: #0a66c2 !important;
+}
+footer i.behance:hover {
+    transition: 0.5s;
+    color: #1769ff !important;
+}
+svg {
+  display: none;
+  background-color: transparent;
+  position: fixed;
+  bottom: 30px;
+  right: 50px;
+  margin: 0;
+  padding: 0;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  cursor: pointer;
+  z-index: 10;
+  background-color: white;
+}
+
+@keyframes GradientBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* @keyframes GradientBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+} */
+
+
