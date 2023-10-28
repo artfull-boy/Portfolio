@@ -2,8 +2,15 @@
 :root {
   --mainColor: rgb(10, 10, 10);
 }
+::selection {
+  cursor: url(./images/text48.png), auto;
+}
+a {
+  cursor: url(./images/link48.png), pointer !important;
+}
 body {
   font-family: "Playpen Sans", cursive;
+  cursor: url(./images/pointer48.png), auto;
 }
 .navbar {
   background-color: rgb(10, 10, 10) !important;
@@ -407,7 +414,7 @@ svg {
   padding: 0;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
   border-radius: 12px;
-  cursor: pointer;
+  cursor: url(./images/link48.png), pointer;
   z-index: 10;
   background-color: white;
 }
